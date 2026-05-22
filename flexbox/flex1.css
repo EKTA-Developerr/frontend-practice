@@ -1,0 +1,16 @@
+.nav{
+    display:flex;
+    height:200px;
+}
+.sidebar{
+    flex:1  100px;
+    background-color:blue;
+    color:white;
+    padding:20px;
+}
+.content{
+    flex:2;
+    background-color:red;
+    color:white;
+    padding:20px;
+}

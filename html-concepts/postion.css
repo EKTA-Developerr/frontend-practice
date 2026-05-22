@@ -1,0 +1,80 @@
+.container {
+    box-sizing: border-box;
+    border: 2px solid black;
+    position: relative;
+    height: 300px;
+    /* smaller so scroll happens */
+    width: 400px;
+    overflow: auto;
+}
+
+
+/* Static */
+
+.static-box {
+    position: static;
+    background: yellow;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+}
+
+
+/* Relative */
+
+.relative-box {
+    position: relative;
+    background: red;
+    width: 100px;
+    height: 100px;
+    left: 70px;
+    bottom: 40px;
+    z-index: 1;
+}
+
+
+/* Absolute */
+
+.absolute-box {
+    position: absolute;
+    background: green;
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: 150px;
+}
+
+
+/* Fixed */
+
+.fixed-box {
+    position: fixed;
+    background: pink;
+    width: 100px;
+    height: 100px;
+    bottom: 600px;
+    left: 10px;
+    z-index: 3;
+}
+
+
+/* Sticky (MAIN PART) */
+
+.sticky-box {
+    position: sticky;
+    background: purple;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    /* important */
+    z-index: 4;
+}
+
+
+/* Extra content for scrolling */
+
+.extra-content {
+    height: 800px;
+    background: lightgray;
+    margin-top: 20px;
+}

@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#cdb7ab;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+form{
+    width:700px;
+    padding:30px;
+    border:2px solid black;
+    border-radius:5px;
+    background:yellowgreen;
+}
+
+/* Title */
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Grid layout */
+.row{
+    display:grid;
+    grid-template-columns:150px 1fr;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+/* Inline inputs (first + last name) */
+.inline{
+    display:flex;
+    gap:5px;
+}
+.code{
+    width:65px;
+    text-align:center;
+    background:#eee;
+}
+.course{
+    border-radius:5px;
+    font-size:15px;
+}
+
+/* Inputs */
+input, textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #999;
+    border-radius:5px;
+}
+
+/* Focus effect */
+input:focus, textarea:focus{
+    outline:none;
+    border-color:#6de4a2;
+    box-shadow:0 0 5px rgba(100,200,150,0.5);
+}
+
+/* Buttons */
+.btn{
+    text-align:center;
+    margin-top:20px;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    padding:10px 20px;
+    margin:5px;
+    cursor:pointer;
+    border:none;
+    background:white;
+}
+
+input[type="submit"]:hover{
+    background:black;
+    color:white;
+}
+input[type="reset"]:hover{
+    background:black;
+    color:white;
+}
+

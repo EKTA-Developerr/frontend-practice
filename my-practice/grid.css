@@ -1,0 +1,324 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgb(255, 231, 167);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ff5722;
+}
+
+
+/* HEADING */
+
+h1 {
+    font-size: 45px;
+    color: #ff5722;
+    margin: 30px 0;
+    text-align: center;
+}
+
+
+/* FOOD GRID */
+
+.itmes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.itmes div {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.itmes img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.itmes img:hover {
+    transform: scale(1.08);
+}
+
+p {
+    font-weight: bold;
+    color: #2a9d8f;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* CHEF SECTION */
+
+.chef-section {
+    padding: 60px 20px;
+    background: #fff8f0;
+}
+
+.chef-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.chef-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.chef-card:hover {
+    transform: translateY(-8px);
+}
+
+.chef-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.chef-info {
+    padding: 15px;
+    font-weight: bold;
+}
+
+.chef-info span {
+    color: gray;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.chef-info i {
+    padding: 10px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+}
+
+
+/* TOP IMAGE SECTION */
+
+.newsletter-section {
+    height: 500px;
+    background: url('ff2.jpg') no-repeat center;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* OVERLAY */
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* NEWSLETTER */
+
+.newsletter {
+    text-align: center;
+    color: white;
+}
+
+.newsletter h1 {
+    font-size: 55px;
+}
+
+.newsletter h3 {
+    font-style: italic;
+    font-family: Brush Script MT;
+    font-size: 40px;
+    letter-spacing: 6px;
+}
+
+
+/* FORM */
+
+.form {
+    margin-top: 20px;
+}
+
+
+/* FORM CONTAINER */
+
+.form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* INPUT */
+
+.form input {
+    padding: 14px 20px;
+    width: 260px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+/* INPUT HOVER + FOCUS */
+
+.form input:hover,
+.form input:focus {
+    border: 2px solid #ff5722;
+    box-shadow: 0 0 10px rgba(255, 87, 34, 0.5);
+}
+
+
+/* BUTTON */
+
+.form button {
+    padding: 14px 25px;
+    border: none;
+    background: #ff5722;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+/* BUTTON HOVER */
+
+.form button:hover {
+    background: black;
+    transform: scale(1.05);
+}
+
+.form button {
+    padding: 12px 20px;
+    border: none;
+    background: #ff5722;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.form button:hover {
+    background: black;
+}
+
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+    background: #111;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    padding: 80px 20px;
+    gap: 20px;
+    text-align: center;
+}
+
+.footer-box h3 {
+    margin-bottom: 10px;
+}
+
+.footer-box p {
+    color: #ccc;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.footer-box h2 {
+    font-size: 40px;
+}
+
+.footer-box .l {
+    letter-spacing: 5px;
+}
+
+.footer-box i {
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-box i:hover {
+    color: #ff5722;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    .newsletter h1 {
+        font-size: 35px;
+    }
+    .form input {
+        width: 180px;
+    }
+}

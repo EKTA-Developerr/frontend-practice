@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <link rel="icon" type="image/x-icon" href="html-5.png">
+</head>
+<style>
+    /* ::before */
+    
+    p::before {
+        content: "🔥";
+    }
+    /* ::before */
+    
+    .p1 p::before {
+        content: "";
+    }
+    /* ::after */
+    
+    li::after {
+        content: "✔️";
+    }
+    /* marker */
+    
+    li::marker {
+        color: yellowgreen;
+        font-size: 30px;
+    }
+    
+    .p1 p::first-letter {
+        color: red;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    body>p:first-of-type::first-line {
+        color: blue;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    /* ::selection */
+    
+     ::selection {
+        background: black;
+        color: white;
+    }
+</style>
+
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, blanditiis!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, blanditiis!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, blanditiis!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, blanditiis!</p>
+    <ul type="circle">
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+    </ul>
+    <div class="p1">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, blanditiis!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, blanditiis!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, blanditiis!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, blanditiis!</p>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>
+                Personal Detalis:
+            </legend>
+            <form>
+
+                <h2>Student Registration Form</h2>
+
+                <!-- First + Last Name -->
+                <div class="row">
+                    <label>Student Name:</label>
+                    <div class="inline">
+                        <input type="text" placeholder="First Name" required>-
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <!--Father Naem-->
+                <div class="row">
+                    <label>Father Name:</label>
+                    <input type="text" placeholder="Father name" required>
+                </div>
+                <!-- Data of birth -->
+                <div class="row">
+                    <label>Data of birth:</label>
+                    <div class="inline">
+                        <input type="day">
+                        <input type="month">
+                        <input type="year">
+                    </div>
+                </div>
+                <!-- Address -->
+                <div class="row">
+                    <label>Address:</label>
+                    <textarea rows="4" required></textarea>
+                </div>
+
+                <!-- Phone -->
+                <div class="row">
+                    <label>Phone No:</label>
+                    <div class="inline">
+                        <input type="text" name="no" value="+91" readonly class="code" required>
+                        <input type="tel">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <label>Email Id:</label>
+                    <input type="email" required>
+
+                </div>
+                <div class="row">
+                    <label>Password:</label>
+                    <input type="password" required>
+                </div>
+
+                <div class="row">
+                    <label>Gender:</label>
+                    <div class="inline">
+                        <input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label>Department:</label>
+                    <div class="inline">
+                        <input type="checkbox" name="department">CSE
+                        <input type="checkbox" name="department">IT
+                        <input type="checkbox" name="departement">ECE
+                        <input type="checkbox" name="departement">CIVIL
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label>Course:</label>
+                    <select class="course" required>
+                        <option>------------------------------------Select current source----------------------------
+                        </option>
+                        <option>BCA</option>
+                        <option>BBA</option>
+                        <option>BCOM</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <label>Student Photo:</label>
+                    <input type="file">
+                </div>
+
+                <div class="row">
+                    <laebl>City:</laebl>
+                    <input type="text" required>
+                </div>
+
+                <!-- Buttons -->
+                <div class="btn">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+
+            </form>
+        </fieldset>
+
+    </div>
+</body>
+
+</html>

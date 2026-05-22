@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Applications </title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        .form {
+            width: 500px;
+            padding: 15px;
+            background: rgb(249, 246, 246);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        label {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        input,
+        select,
+        textarea {
+            padding: 6px;
+            width: 100%;
+            resize: none;
+            font-size: 14px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        textarea {
+            height: 70px;
+        }
+        
+        .btn {
+            width: 140px;
+            display: block;
+            margin: 10px auto 0;
+            padding: 8px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transform: 0.4s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: 0.5s;
+        }
+        
+        input[type="file"] {
+            border: 1px solid gray;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>Job Application</h2>
+            <form>
+                <label>First Name</label>
+                <input type="text" required>
+                <label>Last Name</label>
+                <input type="text">
+                <label>Email</label>
+                <input type="email" required>
+                <label>Job Roll</label>
+                <select>
+                    <option>Backend Developer</option>
+                    <option>Front Developer</option>
+                    <option>Full stack Developer</option>
+                    <option>Software Engineers</option>
+                    <option>AI/ML </option>
+                </select>
+                <label>Address</label>
+                <textarea row="4" cols="60"></textarea>
+                <label>City</label>
+                <input type="text">
+                <label>PinCode</label>
+                <input type="text">
+                <label>Start Date</label>
+                <input type="date">
+                <label>Upload Your CV</label>
+                <input type="file">
+                <button class="btn">Apply now</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, fit-content(100px)); /* 2 columns, each fits content max 100px */
+  gap: 10px;
+  background: #f0f0f0;
+  padding: 10px;
+}
+
+.grid-container div {
+  background: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+ 
+}w

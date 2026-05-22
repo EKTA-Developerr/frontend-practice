@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Dropdown</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: pink;
+            padding: 10px 20px;
+        }
+        
+        h2 {
+            font-size: 28px;
+        }
+        
+        nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        nav a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+        }
+        
+        nav a:hover {
+            color: red;
+        }
+        /* Dropdown */
+        
+        .dropdown {
+            position: relative;
+            /* display: inline-block; */
+        }
+        
+        .btn {
+            padding: 8px 15px;
+            border: none;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: white;
+            min-width: 140px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            color: black;
+        }
+        
+        .dropdown-content a:hover {
+            background: lightgray;
+        }
+        /* Show dropdown */
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+            right: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>My Logo</h2>
+
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT US</a>
+
+            <div class="dropdown">
+                <button class="btn">Links</button>
+
+                <div class="dropdown-content">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 columns</title>
+    <style>
+        .container {
+            display: grid;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        
+        form {
+            display: grid;
+            width: 500px;
+            height: 600px;
+            grid-template-columns: 1fr 1fr;
+            padding: 15px;
+            gap: 20px;
+            font-size: 20px;
+            background: rgb(249, 246, 246);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+        }
+        
+        h2 {
+            font-size: 30px;
+            grid-column: span 2;
+            text-align: center;
+        }
+        
+        input,
+        textarea {
+            width: 100%;
+            resize: none;
+            padding: 4px;
+        }
+        
+        .address {
+            grid-column: span 2;
+        }
+        
+        .btn-class {
+            grid-column: span 2;
+        }
+        
+        .btn {
+            width: 100%;
+            display: block;
+            margin: 10px auto 0;
+            padding: 8px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transform: 0.4s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h2>Registration Form</h2>
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="Enter first name" required>
+            </div>
+            <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" placeholder="Enter last name" requried>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter email" required>
+            </div>
+            <div>
+                <label for="phoneno">Phone:</label>
+                <input type="tel" id="phoneno" placeholder="Enter phone number" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="passwrod" required>
+            </div>
+            <div>
+                <label for="cpassword">Confirm Password:</label>
+                <input type="text" id="cpassword" required>
+            </div>
+            <div class="address">
+                <label for="address">Address:</label>
+                <textarea rows="3" cols="80px"></textarea>
+            </div>
+            <div class="btn-class">
+                <button class="btn">Registration</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

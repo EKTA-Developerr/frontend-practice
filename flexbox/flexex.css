@@ -1,0 +1,65 @@
+.nav{
+    display: flex;
+    height:40px;
+    padding:10px;
+    font-size:20px;
+    font-weight: bold;
+    background-color:yellow;
+}
+.logo{
+    flex:1;
+    text-align:center;
+
+
+}
+.menu{
+    flex:3;
+    text-align:right;
+}
+.sidebar{
+    display: flex;
+    height:300px;
+
+}
+.dashbord{
+    flex:1;
+    background-color:red;
+    padding:10px;
+    color:white;
+
+}
+.content{
+    flex:3;
+    background-color:blue;
+    padding:10px;
+    color:white;
+}
+ .cards div{
+    flex:1;
+    
+    background:white;
+    color:black;
+    padding:20px;
+    text-align:center;
+}
+.cards{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+    height:150px;
+} 
+.cards div:nth-child(2) {
+    align-self: center;
+}
+.cards div:nth-child(1) {
+    align-self: flex-start;
+}
+.cards div:nth-child(3) {
+    align-self: flex-start;
+}
+.cards div:nth-child(4) {
+    align-self: center;
+}
+.cards div:nth-child(5) {
+    align-self: flex-start;
+}

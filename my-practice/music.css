@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgb(65, 3, 166);
+    /* background: #111 */
+}
+
+.parent-container .logo {
+    font-size: 40px;
+    color: white;
+    padding-left: 10%;
+    font-weight: bold;
+}
+
+.menus {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.menus a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+.menus a:hover {
+    border-bottom: 2px solid white;
+}
+
+.imag {
+    background-image: url("music.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+}
+
+.imag-text {
+    position: absolute;
+    color: white;
+    top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 36%;
+    left: 10%;
+    font-weight: bold;
+}
+
+.imag-text h1 {
+    font-size: 70px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.imag-text p {
+    font-size: 20px;
+}
+
+.imag-text span {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.music-container {
+    background: #2b0a4a;
+    color: white;
+    text-align: center;
+    padding: 60px 20px 150px;
+    position: relative;
+}
+
+
+/* text spacing */
+
+.music-contant h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.music-text p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+
+/* button */
+
+.btn-container {
+    margin: 20px 0;
+}
+
+
+/* 🔥 IMAGE POSITION */
+
+.devices {
+    position: absolute;
+    bottom: -60px;
+    /* 👉 overlap control */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.devices img {
+    width: 700px;
+    max-width: 90%;
+    display: block;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+}
+
+.btn {
+    padding: 10px;
+    background: orangered;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.next-section {
+    background: #eee;
+}
+
+.next-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 4%;
+}
+
+.next-text h3 {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.button {
+    margin: 20px;
+}
+
+.next-text .btn {
+    background: rgb(71, 5, 151);
+}
+
+.next-imag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.laptop-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.laptop-container img {
+    width: 80%;
+}
+
+.gift-section {
+    padding: 50px 100px;
+    background-color: #f9f9f9;
+}
+
+.gift-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.gift-image img {
+    width: 250px;
+    max-width: 100%;
+}
+
+.gift-content {
+    max-width: 700px;
+}
+
+.gift-content h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.gift-content p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.redeem-btn {
+    padding: 10px 20px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.redeem-btn:hover {
+    background-color: #e63c3c;
+}
+
+footer {
+    background: rgb(65, 3, 166);
+}
+
+.footer {
+    background: rgb(65, 3, 166);
+    color: #fff;
+    padding: 60px 80px 30px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+/* Columns layout */
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+/* Each column */
+
+.footer-column {
+    min-width: 200px;
+}
+
+
+/* Headings */
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #fff;
+    position: relative;
+}
+
+
+/* underline effect */
+
+.footer-column h4::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 2px;
+    background: orangered;
+    margin-top: 5px;
+}
+
+
+/* List */
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* Hover effect */
+
+.footer-column ul li:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+
+/* Bottom line */
+
+.footer::after {
+    content: "© 2026 MyTunes. All Rights Reserved.";
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 15px;
+    color: #888;
+}

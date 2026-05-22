@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesudo</title>
+</head>
+<style>
+    p:first-of-type::first-line {
+        color: blue;
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+    
+    p.p1::first-letter {
+        color: red;
+        font-size: 200%;
+    }
+</style>
+
+<body>
+    <h2>Using:first-of-type::first-line</h2>
+    <p>you can use the ::first-line psudo element to add a special effect to the first line a text,
+        <br> more more more more more more some more moremore moremoere
+    </p>
+    <h2>Using :first-letter</h2>
+    <p class="p1">I can use the ::first-line psudo element to add a special effect to the first line a text,
+        <br> more more more more more more some more moremore moremoere
+    </p>
+</body>
+
+</html>

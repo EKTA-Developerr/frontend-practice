@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .content {
+            width: 500px;
+            background: rgb(249, 246, 246);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+        }
+        
+        form {
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 4px;
+        }
+        
+        input,
+        textarea {
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+            resize: none;
+        }
+        
+        .btn-class {
+            margin: auto;
+        }
+        
+        .btn {
+            padding: 8px 20px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: height 2s;
+        }
+        
+        .btn:hover {
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <form>
+                <h2>Contact From</h2>
+                <div>
+                    <label>Name:</label>
+                    <input type="text" required>
+
+                </div>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" required>
+                </div>
+                <div>
+                    <label>Message:</label>
+                    <textarea rows="4"></textarea>
+                </div>
+                <div class="btn-class">
+                    <button class="btn">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

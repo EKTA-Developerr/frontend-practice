@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Story - Manali</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* 🎛️ Controls */
+        
+        .controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        button {
+            padding: 8px 12px;
+            margin-right: 10px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        /* 🌄 Parallax */
+        
+        .parallax {
+            height: 100vh;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Images */
+        
+        .img1 {
+            background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');
+        }
+        
+        .img2 {
+            background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
+        }
+        
+        .img3 {
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+        }
+        /* 📝 Content */
+        
+        .content {
+            padding: 60px;
+            background: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        /* ✨ Fade-in */
+        
+        .fade-in {
+            color: white;
+            font-size: 40px;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        /* 👇 Scroll Reveal */
+        
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: 1s;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 🎵 Music -->
+    <audio id="bg-music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+    <!-- 🎛️ Controls -->
+    <div class="controls">
+        <button id="playBtn">Play 🎵</button>
+        <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+    </div>
+
+    <!-- 🌄 Section 1 -->
+    <section class="parallax img1">
+        <h1 class="fade-in">My Manali Journey</h1>
+    </section>
+
+    <!-- 📝 Content -->
+    <section class="content reveal">
+        <p>I started my journey with excitement and dreams...</p>
+    </section>
+
+    <!-- 🌄 Section 2 -->
+    <section class="parallax img2">
+        <h1 class="fade-in">Mountains Welcome Me</h1>
+    </section>
+
+    <!-- 📝 Content -->
+    <section class="content reveal">
+        <p>The cold air, snow, and silence felt magical...</p>
+    </section>
+
+    <!-- 🌄 Section 3 -->
+    <section class="parallax img3">
+        <h1 class="fade-in">Memories Forever</h1>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

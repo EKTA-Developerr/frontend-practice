@@ -1,0 +1,108 @@
+* {
+    /* margin: 0px; */
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px;
+}
+
+table,
+tr,
+td,
+th {
+    text-align: center;
+    /* border: 2px solid black; */
+    border-collapse: collapse;
+    padding: 20px;
+    font-size: large;
+    border: none;
+}
+
+table {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 10px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+tr:nth-child(odd) {
+    background: rgb(245, 245, 245);
+}
+
+.first {
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 5px;
+}
+
+.p1,
+.p2,
+.p3,
+.p4,
+.p5 {
+    display: inline-block;
+    width: 150px;
+    /* sabka same width */
+    text-align: center;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.p1,
+.p5 {
+    background: green;
+}
+
+.p2 {
+    background: orange;
+}
+
+.p3,
+.p4 {
+    background: blue;
+}
+
+
+/* action column center */
+
+.action {
+    text-align: center;
+}
+
+
+/* icon box design */
+
+.action i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    /* vertical center */
+    text-align: center;
+    border-radius: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+/* edit button */
+
+.edit {
+    background: #6c63ff;
+    color: white;
+}
+
+
+/* delete button */
+
+.delete {
+    background: #ff4d4d;
+    color: white;
+}
+
+.c1 {
+    color: blue;
+    font-weight: bold;
+}

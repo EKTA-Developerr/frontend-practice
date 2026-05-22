@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Auto-fill Example</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            gap: 10px;
+            width: 500px;
+
+            /* 🔥 show all columns (including empty) */
+            background: repeating-linear-gradient(to right,
+                    #ddd 0px,
+                    #ddd 100px,
+                    transparent 100px,
+                    transparent 110px);
+
+            grid-template-columns: repeat(auto-fill, 100px);
+        }
+
+        .container div {
+            background: green;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>🔹 auto-fill (empty columns visible)</h2>
+
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+    </div>
+
+</body>
+
+</html>

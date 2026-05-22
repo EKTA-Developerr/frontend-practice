@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button {
+            width: 100px;
+            height: 50px;
+            background: red;
+            animation-name: buttons;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            /*never stop*/
+            animation-direction: alternate;
+            /*goes forward & backward*/
+            animation-fill-mode: backwards;
+        }
+        
+        button:hover {
+            animation-play-state: paused;
+        }
+        
+        @keyframes buttons {
+            0% {
+                transform: translate(0);
+                background: red;
+            }
+            50% {
+                transform: scale(0.90) translate(200px);
+                background: white;
+                box-shadow: 2px 2px 5px black;
+            }
+            75% {
+                transform: scale(1.2);
+                background: gray;
+            }
+            100% {
+                transform: translate(0);
+                background: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn">
+        <button>Click</button>
+    </div>
+
+</body>
+
+</html>

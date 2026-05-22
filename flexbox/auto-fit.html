@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto-fit Example</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            gap: 10px;
+            width: 500px;
+            background: #eee;
+
+            /* 🔥 auto-fit with flexible columns */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        .box {
+            background: green;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>🔹 auto-fit example</h2>
+
+<div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+</div>
+
+</body>
+</html>

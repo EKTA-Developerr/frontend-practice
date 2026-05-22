@@ -1,0 +1,14 @@
+div {
+    font-size: 20px;
+    text-indent: 5%;
+    text-align: justify;
+}
+
+img {
+    float: left;
+    height: 100px;
+}
+
+p {
+    clear: left;
+}

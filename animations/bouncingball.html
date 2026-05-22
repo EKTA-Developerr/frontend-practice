@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            margin: 50px auto;
+            animation: bounceandcolor 2s ease-in-out 2s infinite;
+        }
+        
+        @keyframes bounceandcolor {
+            0% {
+                transform: translateX(0);
+                background: red;
+            }
+            50% {
+                transform: translateX(400px);
+                background: blue;
+                border-radius: 20%;
+            }
+            100% {
+                transform: translateX(0);
+                background: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball"></div>
+</body>
+
+</html>

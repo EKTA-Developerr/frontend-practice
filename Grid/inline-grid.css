@@ -1,0 +1,13 @@
+.container{
+    display:inline-grid;
+    grid-template-columns: auto auto auto auto;
+    background-color:yellow;
+    padding:10px;
+    gap:10px;
+}
+.container div{
+    background-color:red;
+    padding:5px;
+    text-align:center;
+    font-size:20px;
+}
