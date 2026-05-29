@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed 3D Rotation</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            perspective: 1000px;
+            margin: 0;
+            background-color: #fcfcfc;
+        }
+        
+        .box {
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 4s linear infinite;
+            width: 900px;
+            height: 150px;
+        }
+        
+        .box:hover {
+            animation-play-state: paused;
+        }
+        
+        h1 {
+            font-size: 100px;
+            color: purple;
+            position: absolute;
+            backface-visibility: hidden;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        
+        .front {
+            transform: translateZ(15px);
+        }
+        
+        .back {
+            transform: rotateY(180deg) translateZ(15px);
+        }
+        
+        @keyframes rotate {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1 class="front">EKTA DEVELOPER</h1>
+        <h1 class="back">EKTA DEVELOPER</h1>
+    </div>
+
+</body>
+
+</html>

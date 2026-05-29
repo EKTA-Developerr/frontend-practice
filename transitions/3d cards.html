@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            background: black;
+            /* background: black; */
             color: white;
         }
         
@@ -25,12 +25,14 @@
             width: 100%;
             height: 100%;
             position: relative;
-            transition: 1s ease;
+            transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
             transform-style: preserve-3d;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
         
         .child:hover .inner {
             transform: rotateY(180deg) scale(1.05);
+            box-shadow: 0 25px 35px rgba(0, 0, 0, 0.3);
         }
         
         .front,
