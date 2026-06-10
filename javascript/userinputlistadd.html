@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input list ADD items</title>
+</head>
+
+<body>
+    <input type="text" id="inputbox" placeholder="input items">
+    <button type="button" onclick="additems()">Add items</button>
+    <ul id="ul"></ul>
+    <script>
+        function additems() {
+            let input = document.getElementById("inputbox").value;
+
+            if (input === "") {
+                alert("enter somthing items!");
+                return;
+            }
+
+            let li = document.createElement("li");
+            li.innerHTML = input;
+
+            document.getElementById("ul").appendChild(li);
+            document.getElementById("inputbox").value = "";
+
+        }
+    </script>
+</body>
+
+</html>
