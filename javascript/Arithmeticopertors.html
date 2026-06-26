@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+
+
+    <script>
+        //Addition operator
+        let a = 10;
+        let b = 20;
+        let ans = a + b;
+        document.getElementById("demo").innerHTML = ans;
+
+        //concatenates
+        let text1 = "Ekta";
+        let text2 = "Davadra";
+        let ans1 = text1 + " " + text2;
+        document.getElementById("demo1").innerHTML = ans1;
+
+        //subtraction operator
+        let x = 20;
+        let y = 15;
+        let Ans = x - y;
+        document.getElementById("demo2").innerHTML = Ans;
+
+        let text = "hello";
+        let no = 5;
+        let Ans1 = text - no;
+        document.getElementById("demo3").innerHTML = Ans1;
+
+        //Multiplication operator & divison operator
+        let A = 5;
+        let B = 3;
+        let AB = A * B;
+        let ab = A / B;
+        document.getElementById("demo4").innerHTML = AB;
+        document.getElementById("demo5").innerHTML = ab;
+
+        //modulus operator
+        let n = -10 % 3;
+        document.write(n + "<br>");
+
+        //Exponentation operator
+        let f = 2;
+        let g = 4;
+        let h = 6;
+        let fg = f ** g;
+        let fgh = f ** g ** h;
+        document.write(fg + "<br>");
+        document.write(fgh)
+
+        //increment operator(postfix X++)
+        let i = 5;
+        let ii = i++;
+        document.write("<br>Increment is:" + i);
+    </script>
+</body>
+
+</html>

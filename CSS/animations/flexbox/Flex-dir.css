@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-direction:column;
+    background-color:blue;
+    gap:30px;
+}
+.Container div{
+    width: 200px;
+    background-color: gray;
+    width:30px;
+    height:30px;
+    padding:30px;
+    margin:30px;
+    text-align:center;
+    font-size:30px;
+}

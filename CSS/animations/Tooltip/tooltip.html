@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip-animation</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 2px dotted black;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        
+        .tooltiptext {
+            position: absolute;
+            visibility: hidden;
+            text-align: center;
+            width: 150px;
+            background: black;
+            color: white;
+            padding: 4px;
+            border-radius: 4px;
+            z-index: 1;
+            top: 10px;
+            /* left: -15%; */
+            transform: translateY(-50%);
+            right: 110%;
+            /*this is tooltiptext rightside*/
+            /* bottom: 50%; */
+            /* This's animation add in tooltiptext */
+            opacity: 0;
+            transition: 2s ease;
+        }
+        
+        .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent transparent black;
+        }
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(-10px) scale(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tooltip">
+        HOVER ME!
+        <span class="tooltiptext">Hello I am tooltip!</span>
+    </div>
+
+</body>
+
+</html>

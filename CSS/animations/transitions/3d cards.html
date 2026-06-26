@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            /* background: black; */
+            color: white;
+        }
+        
+        .parents {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .child {
+            height: 300px;
+            perspective: 1000px;
+        }
+        
+        .inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .child:hover .inner {
+            transform: rotateY(180deg) scale(1.05);
+            box-shadow: 0 25px 35px rgba(0, 0, 0, 0.3);
+        }
+        
+        .front,
+        .back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+            backface-visibility: hidden;
+        }
+        
+        .front {
+            background: yellow;
+            color: black;
+        }
+        
+        .back {
+            background: orange;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="parents">
+            <div class="child">
+                <div class="inner">
+                    <div class="front">
+                        Front Card
+                    </div>
+                    <div class="back">
+                        Back Card
+                    </div>
+                </div>
+
+            </div>
+            <div class="child">
+                <div class="inner">
+                    <div class="front">
+                        Front Card
+                    </div>
+                    <div class="back">
+                        Back Card
+                    </div>
+                </div>
+
+            </div>
+            <div class="child">
+                <div class="inner">
+                    <div class="front">
+                        Front Card
+                    </div>
+                    <div class="back">
+                        Back Card
+                    </div>
+                </div>
+
+            </div>
+            <div class="child">
+                <div class="inner">
+                    <div class="front">
+                        Front Card
+                    </div>
+                    <div class="back">
+                        Back Card
+                    </div>
+                </div>
+
+            </div>
+            <div class="child">
+                <div class="inner">
+                    <div class="front">
+                        Front Card
+                    </div>
+                    <div class="back">
+                        Back Card
+                    </div>
+                </div>
+
+            </div>
+            <div class="child">
+                <div class="inner">
+                    <div class="front">
+                        Front Card
+                    </div>
+                    <div class="back">
+                        Back Card
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

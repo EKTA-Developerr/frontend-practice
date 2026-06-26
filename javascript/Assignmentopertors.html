@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments operators</title>
+</head>
+
+<body>
+    <script>
+        let x = 10;
+        let z = 20;
+        let y = 8;
+        let a = 4;
+        let b = 6;
+        let c = 20;
+
+        x += 10;
+        z -= 5;
+        y *= 7;
+        a /= 2;
+        b **= 2;
+        c %= 5;
+
+        document.write("Addtion Assignment opertors: " + x);
+        document.write("<br>subtration Assignment opertors: " + z);
+        document.write("<br>Multiplication Assignment opertor: " + y);
+        document.write("<br>Divison Assignment opertor: " + a);
+        document.write("<br>Exponetioation Assignment opertor: " + b);
+        document.write("<br>Modul Assignment opertor: " + c);
+
+        //Logical AND Assignment Operator(&&=)
+        let d = true;
+        let e = 20
+        if (d) {
+            d = e;
+        }
+        document.write("<br>value is d: " + d);
+
+        //Logical OR Assignment Operator(||=)
+        let name = " ";
+        let namef = "Ekta";
+        if (name) {
+            name = namef;
+        }
+        document.write("<br>value is name: " + name);
+    </script>
+</body>
+
+</html>

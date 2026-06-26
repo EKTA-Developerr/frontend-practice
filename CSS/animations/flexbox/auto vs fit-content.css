@@ -1,0 +1,26 @@
+.auto-container{
+    display: grid;
+    grid-template-columns:auto 1fr;
+    background-color:gray;
+    padding:20px;
+    gap:20px;
+}
+.auto-container div{
+    background-color:blue;
+    padding:5px;
+    text-align:center;
+}
+.fit-content{
+    display: grid;
+    grid-template-columns:fit-content(200px) 1fr;
+    background-color:gray;
+    padding:10px;
+    gap:10px;
+}
+.fit-content div{
+    background-color:white;
+    padding:5px;
+    text-align:center;
+    align-self:start;
+
+}

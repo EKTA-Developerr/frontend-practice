@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid {
+  display: grid;
+  grid-template-columns: minmax(100px, 200px) 1fr;
+  gap: 10px;
+}
+
+.grid div {
+  background: green;
+  color: white;
+  padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="grid">
+  <div>Short</div>
+  <div>This is second column</div>
+
+  <div>Very very long content here to test minmax behavior this is set yes or no</div>
+  <div>Second column again</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+.container{
+    background-color:blue;
+    display:flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.container div{
+    background-color:red;
+    width:30px;
+    margin:20px;
+    padding:20px;
+    font-size:20px;
+    text-align:center;
+}
