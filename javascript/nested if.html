@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="password" id="password" placeholder="enter pin">
+
+    <input type="number" id="amount" placeholder="Enter Amount">
+    <button type="button" onclick="atm()">Submit</button>
+
+    <p id="result"></p>
+    <script>
+        //Login
+        let username = "admi";
+        const password = 1234;
+        if (username === "admin") {
+            if (password === 1234) {
+                document.write("login Successful");
+            } else {
+                document.write("Wrong Password!")
+            }
+
+        } else {
+            document.write("Invlid User!")
+        }
+        // Voting
+        let age = 20;
+        let voterid = "no";
+        let text = "";
+        if (age >= 18) {
+            if (voterid === "yes") {
+                text = "Eligible to vote"
+            } else {
+                text = "voterID required!"
+            }
+        } else {
+            text = "not Eligible!"
+        }
+        document.write("<br>" + text);
+
+        //Driving License
+        let age1 = 24;
+        let test = "fail";
+        let text1 = "";
+        if (age1 >= 18) {
+            if (test === "pass") {
+                text1 = "pass driving test"
+            } else {
+                text1 = "not pass driving test"
+            }
+        } else {
+            text1 = "Output accordingly."
+        }
+        document.write("<br>" + text1);
+
+        //Student Pass
+        let marks = 60;
+        let remark = "pass";
+        if (remark === "pass") {
+            if (marks >= 75) {
+                tex = "Pass with Distinction";
+            } else {
+                tex = "pass"
+            }
+        } else {
+            tex = "fail"
+        }
+        document.write("<br>" + tex);
+
+        //ATM
+        function atm() {
+            let pin = Number(document.getElementById("password").value);
+            let balance = 10000;
+
+            let amount = Number(document.getElementById("amount").value);
+
+            if (pin === 1234) {
+
+                if (balance >= amount) {
+                    balance = balance - amount;
+                    document.getElementById("result").innerHTML = "Transaction Successful<br>" + "withdraw Amount: " + amount + "<br>Remaining Balance: " + balance;
+                } else {
+                    document.getElementById("result").innerHTML = "Insufficient Balance";
+                }
+            } else {
+                document.getElementById("result").innerHTML = "Wrong PIN!";
+            }
+        }
+
+        //Online Shopping
+        let member = "yes";
+        let amount = 7000;
+        if (member === "yes") {
+            if (amount >= 5000) {
+                let discount = (amount * 10) / 100;
+                let finalamount = amount - discount;
+
+                document.write("<br>Discount:" + discount);
+                document.write("<br>finalamount: " + finalamount);
+            } else {
+                document.write("no discount");
+            }
+        } else {
+            document.write("Only member get discount!");
+        }
+        //Bank Loan
+        let age2 = 20;
+        const salary = 50000;
+        if (age2 >= 21) {
+            if (salary >= 30000) {
+                document.write("<br>You are eligible for a loan");
+            } else {
+                document.write("<br>not eligible for loan!");
+            }
+        } else {
+            document.write("<br>Not eligible. Age must be 21 or above.!");
+        }
+
+        //3-Level Nested if
+        let student = 12;
+        let percentage = 80;
+        let enterancemark = 110;
+
+        if (student === 12) {
+
+            if (percentage >= 75) {
+
+                if (enterancemark >= 120) {
+                    document.write("<br>Admission Confirmed!");
+                } else {
+                    document.write("<br>Entrance Marks Too Low");
+                }
+
+            } else {
+                document.write("<br>Percentage Too Low");
+            }
+
+        } else {
+            document.write("Failed 12th");
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

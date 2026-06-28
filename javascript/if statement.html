@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if statement</title>
+</head>
+
+<body>
+    <input type="number" id="age" placeholder="enter age">
+    <button type="button" onclick="age()">Submit</button>
+    <p id="demo"></p>
+    <script>
+        function age() {
+            let input = document.getElementById("age").value;
+            if (input >= 18 && input <= 70) {
+                text = "you can drive"
+            }
+            // } else {
+            //     text = "you can't drive!"
+            // }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>

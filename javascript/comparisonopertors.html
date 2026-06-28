@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Operators</title>
+</head>
+
+<body>
+
+    <label>Enter Age:</label>
+    <input type="number" id="age" placeholder="Enter age">
+
+    <button type="button" onclick="age()">Submit</button>
+
+    <p id="result"></p>
+
+    <script>
+        function age() {
+            let input = document.getElementById("age").value;
+
+            if (input >= 18 && input <= 70) {
+                document.getElementById("result").innerHTML = "Yes, eligible!";
+            } else {
+                document.getElementById("result").innerHTML = "Not eligible!";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
