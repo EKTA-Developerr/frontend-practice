@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condition practies</title>
+</head>
+
+<body>
+    <input type="number" id="no1">
+    <input type="number" id="no2">
+    <input type="number" id="no3">
+    <button type="button" onclick="largets()">Submit</button>
+    <p id="ans"></p>
+
+    <input type="number" id="amount" placeholder="enter amount">
+    <button type="button" onclick="shoppingDiscount()">Submit</button>
+    <h2 id="discount"></h2>
+
+    <input type="number" id="unit" placeholder="enter unit">
+    <button type="button" onclick="ElectricBill() ">Submit</button>
+    <p id="unit1"></p>
+
+    <script>
+        function largets() {
+            let no1 = Number(document.getElementById("no1").value);
+            let no2 = Number(document.getElementById("no2").value);
+            let no3 = Number(document.getElementById("no3").value);
+
+            if (no1 > no2 && no1 > no3) {
+                document.getElementById("ans").innerHTML = +no1 + " is largets";
+            } else if (no2 > no1 && no2 > no3) {
+                document.getElementById("ans").innerHTML = +no2 + " is largets";
+            } else {
+                document.getElementById("ans").innerHTML = +no3 + " is largets";
+            }
+
+        }
+
+
+
+        function shoppingDiscount() {
+            let amount = Number(document.getElementById("amount").value);
+
+            if (amount >= 5000) {
+                document.getElementById("discount").innerHTML =
+                    "Amount: ₹" + amount + "<br>20% Discount";
+            } else if (amount >= 3000) {
+                document.getElementById("discount").innerHTML =
+                    "Amount: ₹" + amount + "<br>15% Discount";
+            } else if (amount >= 1000) {
+                document.getElementById("discount").innerHTML =
+                    "Amount: ₹" + amount + "<br>10% Discount";
+            } else {
+                document.getElementById("discount").innerHTML =
+                    "Amount: ₹" + amount + "<br>No Discount";
+            }
+        }
+
+        function ElectricBill() {
+            let unitt = Number(document.getElementById("unit").value);
+            let rate;
+
+            if (unitt <= 100) {
+                rate = 2;
+
+            } else if (unitt <= 200) {
+                rate = 3;
+            } else if (unitt <= 500) {
+                rate = 5;
+            } else {
+                rate = 7;
+            }
+            let bill = unitt * rate;
+            document.getElementById("unit1").innerHTML = "Unit: " + unitt + "<br> Rate: " + rate + "<br>Bill: " + bill;
+        }
+    </script>
+</body>
+
+</html>

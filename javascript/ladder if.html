@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ladder if </title>
+</head>
+
+<body>
+    <input type="number" id="num" placeholder="enter no">
+    <button type="button" onclick="no()">Submit</button>
+
+    <input type="text" id="signal" placeholder="Enter Signal">
+    <button type="button" onclick="traffic()">Submit</button>
+    <h2 id="result"></h2>
+
+
+    <input type="number" id="no" placeholder="enter month no">
+    <button type="button" onclick="months()">Submit</button>
+    <h1 id="result1"></h1>
+
+    <input type="password" id="password">
+    <button type="button" onclick="passwordStrength()">Submit</button>
+
+
+
+    <script>
+        function no() {
+            let n1 = Number(document.getElementById("num").value);
+
+            if (n1 >= 0) {
+                document.write("Positive");
+            } else if (n1 <= 0) {
+                document.write("<br>Negative");
+            } else {
+                document.write("zero");
+            }
+        }
+
+        let age = 40;
+        if (age <= 12) {
+            document.write("<br>child");
+        } else if (age <= 19) {
+            document.write("<br>Teenager");
+        } else if (age <= 59) {
+            document.write("<br>Adult");
+        } else {
+            document.write("<br>Senior");
+        }
+
+        let mark = 88;
+        if (mark >= 90) {
+            document.write("Grade A");
+        } else if (mark >= 80 && mark <= 89) {
+            document.write("<br>Grade B");
+        } else if (mark >= 70 && mark <= 79) {
+            document.write("Grade C");
+        } else if (mark >= 35 && mark <= 69) {
+            document.write("Pass");
+        } else {
+            document.write("Fail");
+        }
+
+        function traffic() {
+
+            let color = document.getElementById("signal").value.toLowerCase();
+            if (color === "red") {
+                document.body.style.backgroundColor = "red";
+                document.getElementById("result").innerHTML = "STOP";
+            } else if (color === "yellow") {
+                document.body.style.backgroundColor = "yellow";
+                document.getElementById("result").innerHTML = "WAIT";
+            } else if (color === "green") {
+                document.body.style.backgroundColor = "green";
+                document.getElementById("result").innerHTML = "GO";
+            } else {
+                document.body.style.backgroundColor = "white";
+                document.getElementById("result").innerHTML = "Invalid Signal";
+            }
+
+        }
+
+        function months() {
+            let monthno = Number(document.getElementById("no").value);
+            if (monthno == 1) {
+                document.getElementById("result1").innerHTML = "January";
+            } else if (monthno == 2) {
+                document.getElementById("result1").innerHTML = "Febuary";
+
+
+            } else if (monthno === 3) {
+                document.getElementById("result1").innerHTML = "March";
+
+
+            } else if (monthno === 4) {
+                document.getElementById("result1").innerHTML = "April";
+
+            } else if (monthno === 5) {
+                document.getElementById("result1").innerHTML = "May";
+
+            } else if (monthno === 6) {
+                document.getElementById("result1").innerHTML = "June";
+
+            } else if (monthno === 7) {
+                document.getElementById("result1").innerHTML = "July";
+
+            } else if (monthno === 8) {
+                document.getElementById("result1").innerHTML = "August";
+
+            } else if (monthno === 9) {
+                document.getElementById("result1").innerHTML = "September";
+
+            } else if (monthno === 10) {
+                document.getElementById("result1").innerHTML = "October";
+
+            } else if (monthno === 11) {
+                document.getElementById("result1").innerHTML = "November";
+
+            } else if (monthno === 12) {
+                document.getElementById("result1").innerHTML = "December";
+
+            } else {
+                document.getElementById("result1").innerHTML = "Does not exist!";
+
+            }
+        }
+
+        function passwordStrength() {
+            let password = document.getElementById("password").value;
+
+            if (password.length < 6) {
+                alert("Weak password!");
+            } else if (password.length < 9) {
+                alert("Medium password!");
+            } else if (password.length <= 15) {
+                alert("Strong password!");
+            } else {
+                alert("very strong password");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+</head>
+
+<body>
+    <input type="password" id="pin" placeholder="Enter PIN">
+
+    <input type="number" id="amount" placeholder="Enter Amount">
+
+    <button type="button" onclick="atm()">Submit</button>
+
+    <p id="result"></p>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+
+    <p id="loginn"></p>
+
+    <input type="number" id="unit" placeholder="enter unit">
+    <button type="button" onclick="ElectricBill() ">Submit</button>
+    <p id="unit1"></p>
+
+    <input type="number" id="marks" placeholder="Enter Marks">
+    <button onclick="checkGrade()">Check Grade</button>
+    <p id="resul"></p>
+
+    <input type="number" id="age" placeholder="Enter Age">
+    <button onclick="checkAge()">Check</button>
+    <p id="ans"></p>
+
+
+
+
+    <script>
+        //ATM
+        function atm() {
+            let pin = Number(document.getElementById("pin").value);
+            let balance = 10000;
+
+            let amount = Number(document.getElementById("amount").value);
+
+            if (pin === 1234) {
+
+                if (balance >= amount) {
+                    balance = balance - amount;
+                    document.getElementById("result").innerHTML = "Transaction Successful<br>" + "withdraw Amount: " + amount + "<br>Remaining Balance: " + balance;
+                } else {
+                    document.getElementById("result").innerHTML = "Insufficient Balance";
+                }
+            } else {
+                document.getElementById("result").innerHTML = "Wrong PIN!";
+            }
+        }
+        //login system
+        function login() {
+            let username = document.getElementById("username").value;
+            let password = Number(document.getElementById("password").value);
+
+            if (username === "admin") {
+                if (password === 1234) {
+                    document.getElementById("loginn").innerHTML = "Login Successful";
+                } else {
+                    document.getElementById("loginn").innerHTML = "Wrong Password!";
+                }
+            } else {
+                document.getElementById("loginn").innerHTML = "Invalid User!";
+            }
+        }
+        //ElectriBill
+        function ElectricBill() {
+            let unitt = Number(document.getElementById("unit").value);
+            let rate;
+
+            if (unitt <= 100) {
+                rate = 2;
+
+            } else if (unitt <= 200) {
+                rate = 3;
+            } else if (unitt <= 500) {
+                rate = 5;
+            } else {
+                rate = 7;
+            }
+            let bill = unitt * rate;
+            document.getElementById("unit1").innerHTML = "Unit: " + unitt + "<br> Rate: " + rate + "<br>Bill: " + bill;
+        }
+        //grade check
+        function checkGrade() {
+            let mark = Number(document.getElementById("marks").value);
+            let result = "";
+
+            if (mark >= 90) {
+                result = "Grade A";
+            } else if (mark >= 80) {
+                result = "Grade B";
+            } else if (mark >= 70) {
+                result = "Grade C";
+            } else if (mark >= 35) {
+                result = "Pass";
+            } else {
+                result = "Fail";
+            }
+
+            document.getElementById("resul").innerHTML = result;
+        }
+        //age calcutors
+        function checkAge() {
+            let age = Number(document.getElementById("age").value);
+            let result = "";
+
+            if (age <= 12) {
+                result = "Child 👶";
+            } else if (age <= 19) {
+                result = "Teenager 🧑";
+            } else if (age <= 59) {
+                result = "Adult 🧑‍💼";
+            } else {
+                result = "Senior 👴";
+            }
+            if (age <= 0 || isNaN(age)) {
+                result = "Please enter valid age";
+            }
+
+            document.getElementById("ans").innerHTML = result;
+        }
+    </script>
+
+</body>
+
+</html>
